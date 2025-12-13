@@ -62,7 +62,7 @@ OR
 
 Download the ZIP file and extract it
 
-🔹 Step 2: Frontend Setup (React)
+**🔹 Step 2: Frontend Setup (React)**
 Open terminal
 
 Navigate to the client folder:
@@ -85,7 +85,7 @@ npm start
 arduino
 Copy code
 http://localhost:3000
-🔹 Step 3: Backend Setup (Node.js)
+**🔹 Step 3: Backend Setup (Node.js)**
 Open a new terminal
 
 Go to the server folder:
@@ -103,16 +103,18 @@ Start the backend server:
 bash
 Copy code
 npm start
+
 📍 Backend will run at:
 
 arduino
 Copy code
 http://localhost:5000
-🗄️ Database Setup (MySQL)
+
+**🗄️ Database Setup (MySQL)**
 This project uses MySQL as the database.
 It stores all information related to students, staff, admissions, courses, attendance, results, fees, library, and more.
 
-🔹 Step 4: Create the Database
+**🔹 Step 4: Create the Database**
 Open MySQL Workbench or Command Line
 
 Run the following commands:
@@ -121,8 +123,9 @@ sql
 Copy code
 CREATE DATABASE IF NOT EXISTS north_gate_university;
 USE north_gate_university;
-🔹 Step 5: Import SQL File
-📁 SQL file location:
+**🔹 Step 5: Import SQL File**
+
+**📁 SQL file location:**
 
 pgsql
 Copy code
@@ -138,7 +141,9 @@ Method 2: Command Line
 bash
 Copy code
 mysql -u root -p north_gate_university < north_gate_university.sql
-📊 Database Tables Overview
+
+**📊 Database Tables Overview**
+
 Major tables included:
 
 users – Authentication and roles
@@ -167,7 +172,9 @@ scholarships – Scholarships
 
 placement_records – Placements
 
-📌 Sample Data Included
+
+**📌 Sample Data Included**
+
 The database already contains sample data for:
 
 Courses
@@ -182,7 +189,9 @@ Student Clubs
 
 This helps in testing the application immediately.
 
-🚀 Database Features
+
+**🚀 Database Features**
+
 Proper foreign key relationships
 
 Indexes for faster queries
@@ -193,7 +202,9 @@ Stored procedures for complex queries
 
 Data integrity using constraints
 
-🔍 Views Available
+
+**🔍 Views Available**
+
 active_students – All active students
 
 recent_admissions – Last 30 days admissions
@@ -202,7 +213,9 @@ upcoming_events – Future events
 
 featured_news – Highlighted announcements
 
-⚙️ Stored Procedures
+
+**⚙️ Stored Procedures**
+
 GetStudentDetails
 
 GetStudentAttendance
@@ -211,7 +224,9 @@ GetStudentResults
 
 GetUpcomingEvents
 
-🔐 Environment Configuration
+
+**🔐 Environment Configuration**
+
 Create a .env file inside the server folder:
 
 env
@@ -220,9 +235,10 @@ DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
 DB_NAME=north_gate_university
-⚠️ Do NOT upload .env to GitHub.
 
-✅ How to Verify Setup
+
+**✅ How to Verify Setup**
+
 Run in MySQL:
 
 sql
@@ -230,7 +246,9 @@ Copy code
 SHOW TABLES;
 If tables are visible, setup is successful ✅
 
-📌 Notes
+
+**📌 Notes**
+
 Designed for educational purposes
 
 Can be extended with:
@@ -241,5 +259,7 @@ Role-based access control
 
 Reporting dashboards
 
-⭐ Conclusion
+
+**⭐ Conclusion**
+
 This project demonstrates a complete full-stack College Management System using modern web technologies and a well-structured database.
