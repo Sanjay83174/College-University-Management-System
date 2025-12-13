@@ -63,6 +63,7 @@ OR
 Download the ZIP file and extract it
 
 **🔹 Step 2: Frontend Setup (React)**
+
 Open terminal
 
 Navigate to the client folder:
@@ -85,7 +86,9 @@ npm start
 arduino
 Copy code
 http://localhost:3000
+
 **🔹 Step 3: Backend Setup (Node.js)**
+
 Open a new terminal
 
 Go to the server folder:
@@ -110,6 +113,7 @@ arduino
 Copy code
 http://localhost:5000
 
+
 **🗄️ Database Setup (MySQL)**
 This project uses MySQL as the database.
 It stores all information related to students, staff, admissions, courses, attendance, results, fees, library, and more.
@@ -123,6 +127,7 @@ sql
 Copy code
 CREATE DATABASE IF NOT EXISTS north_gate_university;
 USE north_gate_university;
+
 **🔹 Step 5: Import SQL File**
 
 **📁 SQL file location:**
@@ -141,6 +146,7 @@ Method 2: Command Line
 bash
 Copy code
 mysql -u root -p north_gate_university < north_gate_university.sql
+
 
 **📊 Database Tables Overview**
 
