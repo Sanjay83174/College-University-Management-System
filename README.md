@@ -269,3 +269,6 @@ Reporting dashboards
 **⭐ Conclusion**
 
 This project demonstrates a complete full-stack College Management System using modern web technologies and a well-structured database.
+
+
+**(Refer Public folder for clear set-up and full database schema also for clear readme file.)**
