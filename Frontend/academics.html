@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics - North Gate University</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .academics-hero {
+      background: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 0 2px 8px #2a5298;
+      border-radius: 0 0 2rem 2rem;
+      margin-bottom: 2rem;
+    }
+    .academics-hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .academics-section, .academics-faculty-section, .academics-calendar-section, .academics-achievements-section {
+      background: #fff;
+      border-radius: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 16px rgba(42,82,152,0.06);
+      padding: 2.5rem 1.5rem;
+    }
+    .academics-section h2, .academics-faculty-section h2, .academics-calendar-section h2, .academics-achievements-section h2 {
+      color: #2a5298;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    .academics-section ul, .academics-section ol {
+      margin-bottom: 1.5rem;
+    }
+    .academics-section li {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .academics-faculty-section .faculty-card {
+      background: #f8fafc;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(42,82,152,0.08);
+      padding: 1.5rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .academics-faculty-section img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    .academics-calendar-section .table {
+      background: #f8fafc;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+    .academics-achievements-section .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(42,82,152,0.08);
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 900px) {
+      .academics-hero h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Banner -->
+  <div class="academics-hero">
+    <h1>Academics at North Gate University</h1>
+  </div>
+
+  <!-- Academics Overview -->
+  <section class="academics-section container">
+    <h2>Academic Excellence</h2>
+    <p>North Gate University is committed to providing a world-class education through innovative teaching, rigorous curriculum, and a focus on research and holistic development. Our academic programs are designed to nurture critical thinking, creativity, and leadership in every student.</p>
+  </section>
+
+  <!-- Departments & Courses -->
+  <section class="academics-section container">
+    <h2>Departments & Courses Offered</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded h-100">
+          <h5 class="text-primary mb-2"><i class="fa fa-microchip me-2"></i>Engineering</h5>
+          <ul>
+            <li>B.Tech Computer Science & Engineering</li>
+            <li>B.Tech Information Technology</li>
+            <li>B.Tech Electronics & Communication</li>
+            <li>B.Tech Electrical & Electronics</li>
+            <li>B.Tech Mechanical</li>
+            <li>B.Tech Civil</li>
+            <li>B.Tech Biotechnology</li>
+            <li>B.Tech Artificial Intelligence</li>
+            <li>B.Tech Data Science</li>
+            <li>M.Tech (All Branches)</li>
+            <li>Ph.D. (Engineering)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded h-100">
+          <h5 class="text-primary mb-2"><i class="fa fa-flask me-2"></i>Sciences</h5>
+          <ul>
+            <li>B.Sc Physics</li>
+            <li>B.Sc Chemistry</li>
+            <li>B.Sc Mathematics</li>
+            <li>B.Sc Computer Science</li>
+            <li>M.Sc Physics</li>
+            <li>M.Sc Chemistry</li>
+            <li>M.Sc Mathematics</li>
+            <li>Ph.D. (Sciences)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded h-100">
+          <h5 class="text-primary mb-2"><i class="fa fa-briefcase me-2"></i>Commerce & Management</h5>
+          <ul>
+            <li>B.Com</li>
+            <li>BBA</li>
+            <li>MBA</li>
+            <li>Ph.D. (Management)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded h-100">
+          <h5 class="text-primary mb-2"><i class="fa fa-laptop-code me-2"></i>Computer Applications</h5>
+          <ul>
+            <li>BCA</li>
+            <li>MCA</li>
+            <li>Ph.D. (Computer Applications)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded h-100">
+          <h5 class="text-primary mb-2"><i class="fa fa-book-open me-2"></i>Arts & Humanities</h5>
+          <ul>
+            <li>BA English</li>
+            <li>BA Economics</li>
+            <li>MA English</li>
+            <li>Ph.D. (Arts & Humanities)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculty Highlights -->
+  <section class="academics-faculty-section container">
+    <h2>Our Esteemed Faculty</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="faculty-card">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Faculty 1">
+          <h5>Dr. Arvind Rao</h5>
+          <p class="text-muted mb-1">Professor, Computer Science</p>
+          <p>Expert in Artificial Intelligence and Data Science with 20+ years of teaching and research experience.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="faculty-card">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Faculty 2">
+          <h5>Dr. Meena Sharma</h5>
+          <p class="text-muted mb-1">Professor, Physics</p>
+          <p>Renowned physicist and recipient of the National Science Award for her research in quantum mechanics.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="faculty-card">
+          <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="Faculty 3">
+          <h5>Prof. S. K. Gupta</h5>
+          <p class="text-muted mb-1">Professor, Management</p>
+          <p>Industry veteran and author, specializing in business strategy and entrepreneurship.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research & Innovation -->
+  <section class="academics-section container">
+    <h2>Research & Innovation</h2>
+    <ul>
+      <li>Dedicated research centers in AI, Robotics, Biotechnology, and Renewable Energy</li>
+      <li>Collaborations with national and international universities and industries</li>
+      <li>Student research grants and innovation challenges</li>
+      <li>Annual research symposium and publication opportunities</li>
+    </ul>
+  </section>
+
+  <!-- Facilities -->
+  <section class="academics-section container">
+    <h2>Academic Facilities</h2>
+    <ul>
+      <li>State-of-the-art laboratories and computer centers</li>
+      <li>Extensive library with digital resources</li>
+      <li>Smart classrooms and seminar halls</li>
+      <li>Wi-Fi enabled campus</li>
+      <li>Innovation and entrepreneurship cell</li>
+    </ul>
+  </section>
+
+  <!-- Academic Calendar -->
+  <section class="academics-calendar-section container">
+    <h2>Academic Calendar (2024-25)</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr><th>Event</th><th>Date</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Odd Semester Begins</td><td>August 1, 2024</td></tr>
+        <tr><td>Mid-Semester Exams</td><td>October 10-15, 2024</td></tr>
+        <tr><td>Odd Semester Ends</td><td>December 15, 2024</td></tr>
+        <tr><td>Even Semester Begins</td><td>January 5, 2025</td></tr>
+        <tr><td>Annual Fest</td><td>February 20-22, 2025</td></tr>
+        <tr><td>Even Semester Exams</td><td>May 10-20, 2025</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Student Achievements -->
+  <section class="academics-achievements-section container">
+    <h2>Student Achievements</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5 class="text-success"><i class="fa fa-trophy me-2"></i>National Innovation Award 2024</h5>
+          <p>Our engineering students won the National Innovation Award for their project on renewable energy solutions.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5 class="text-success"><i class="fa fa-medal me-2"></i>Best Research Paper</h5>
+          <p>Science department students published research in top international journals and won the Best Paper Award.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5 class="text-success"><i class="fa fa-award me-2"></i>Placement Excellence</h5>
+          <p>Over 95% of our students placed in top companies, including Fortune 500 firms and leading startups.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5 class="text-success"><i class="fa fa-star me-2"></i>Sports & Cultural Achievements</h5>
+          <p>Students excel in sports, arts, and cultural events at state and national levels.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section text-center py-5">
+    <div class="container">
+      <h2 class="mb-4">Explore Our Programs & Apply Today!</h2>
+      <a href="admissions.html" class="btn btn-primary btn-lg px-5">Apply Now</a>
+      <p class="mt-3">Or <a href="index.html#contact">contact us</a> for more information or to schedule a campus visit.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-primary text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h5>Contact Us</h5>
+          <p class="mb-1"><i class="fa fa-map-marker-alt me-2"></i>123 University Road, City, State</p>
+          <p class="mb-1"><i class="fa fa-envelope me-2"></i>info@northgateuniv.edu</p>
+          <p><i class="fa fa-phone me-2"></i>+91 12345 67890</p>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html#home" class="text-white">Home</a></li>
+            <li><a href="about.html" class="text-white">About</a></li>
+            <li><a href="admissions-info.html" class="text-white">Admissions</a></li>
+            <li><a href="academics.html" class="text-white">Academics</a></li>
+            <li><a href="index.html#placements" class="text-white">Placements</a></li>
+            <li><a href="index.html#contact" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        &copy; 2024 North Gate University. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

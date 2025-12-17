@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | North Gate University</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">North Gate University</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="admissions-info.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+          <li class="nav-item"><a class="nav-link" href="student-portal.html">Student Portal</a></li>
+          <li class="nav-item"><a class="nav-link" href="staff-portal.html">Staff Portal</a></li>
+          <li class="nav-item"><a class="nav-link" href="placements.html">Placements</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section faq-section py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Frequently Asked Questions</h2>
+      <p class="text-center mb-5">Find answers to the most common questions about North Gate University. If you have more queries, feel free to ask below!</p>
+      
+      <!-- FAQ Accordion -->
+      <div class="mb-5">
+        <h4 class="mb-3">General Questions</h4>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                What programs does North Gate University offer?
+              </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We offer undergraduate, postgraduate, and doctoral programs in engineering, sciences, business, humanities, and more.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                How do I apply for admission?
+              </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                You can apply online through our admissions portal. Visit the Admissions page for detailed instructions and deadlines.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                What scholarships are available?
+              </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We offer merit-based, need-based, sports, and special category scholarships. Check the Scholarships page for details and eligibility.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                Is hostel accommodation available?
+              </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, we provide safe and comfortable hostel facilities for both boys and girls with various room options.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                How can I contact the university for more information?
+              </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                You can reach us via email, phone, or the contact form on the Contact Us page. Our team is happy to assist you.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit a Question -->
+      <div class="mb-5">
+        <h4 class="mb-3">Submit Your Question</h4>
+        <form>
+          <div class="mb-3">
+            <label for="faqName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="faqName" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <label for="faqEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="faqEmail" placeholder="Your Email">
+          </div>
+          <div class="mb-3">
+            <label for="faqQuestion" class="form-label">Your Question</label>
+            <textarea class="form-control" id="faqQuestion" rows="3" placeholder="Type your question here"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <!-- Contact / Help -->
+      <div class="mb-5">
+        <h4 class="mb-3">Contact / Help</h4>
+        <div class="row">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="faqHelpName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="faqHelpName" placeholder="Your Name">
+              </div>
+              <div class="mb-3">
+                <label for="faqHelpEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="faqHelpEmail" placeholder="Your Email">
+              </div>
+              <div class="mb-3">
+                <label for="faqHelpQuery" class="form-label">Query</label>
+                <textarea class="form-control" id="faqHelpQuery" rows="3" placeholder="Your query"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-light p-3 rounded shadow-sm h-100">
+              <h6>Help Desk</h6>
+              <p class="mb-1"><i class="fa fa-envelope me-2"></i>help@northgateuniv.edu</p>
+              <p class="mb-1"><i class="fa fa-phone me-2"></i>+91 95555 66778</p>
+              <p><i class="fa fa-map-marker-alt me-2"></i>Admin Block, North Gate University</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer bg-primary text-white py-4 mt-5">
+    <div class="container text-center">
+      &copy; 2024 North Gate University. All rights reserved.
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

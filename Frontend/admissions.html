@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply for Admission - North Gate University</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background: #f4f7fa; }
+    .admissions-form-container {
+      max-width: 600px;
+      margin: 3rem auto;
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 16px rgba(42,82,152,0.08);
+      padding: 2.5rem 2rem;
+    }
+    .admissions-form-title {
+      color: #2a5298;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .form-label { font-weight: 500; }
+    .form-control:focus { border-color: #2a5298; box-shadow: 0 0 0 0.2rem #b6c6e6; }
+    .btn-primary { background: #2a5298; border: none; }
+    .btn-primary:hover { background: #1e3c72; }
+  </style>
+</head>
+<body>
+  <div class="admissions-form-container">
+    <div class="admissions-form-title">Apply for Admission</div>
+    <form id="admissionsForm" novalidate>
+      <div class="mb-3">
+        <label for="admitName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="admitName" required placeholder="Enter your full name">
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+      <div class="mb-3">
+        <label for="admitEmail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="admitEmail" required placeholder="example@email.com">
+        <div class="invalid-feedback">Please enter a valid email.</div>
+      </div>
+      <div class="mb-3">
+        <label for="admitPhone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="admitPhone" required pattern="[0-9]{10}" placeholder="10-digit phone number">
+        <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+      </div>
+      <div class="mb-3">
+        <label for="admitDOB" class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" id="admitDOB" required placeholder="Select your date of birth">
+        <div class="invalid-feedback">Please select your date of birth.</div>
+        <div class="invalid-feedback" id="ageError" style="display: none;">You must be at least 18 years old to apply for degree and masters programs.</div>
+      </div>
+      <div class="mb-3">
+        <label for="admitGender" class="form-label">Gender</label>
+        <select class="form-select" id="admitGender" required>
+          <option value="">Select</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+        <div class="invalid-feedback">Please select your gender.</div>
+      </div>
+      <div class="mb-3">
+        <label for="admitAddress" class="form-label">Address</label>
+        <textarea class="form-control" id="admitAddress" rows="2" required placeholder="Enter your full address"></textarea>
+        <div class="invalid-feedback">Please enter your address.</div>
+      </div>
+      <div class="mb-3">
+        <label for="admitCourse" class="form-label">Course Interested</label>
+        <select class="form-select" id="admitCourse" required>
+          <option value="">Select a course</option>
+          <optgroup label="Engineering">
+            <option value="B.Tech Computer Science">B.Tech Computer Science</option>
+            <option value="B.Tech Information Technology">B.Tech Information Technology</option>
+            <option value="B.Tech Electronics & Communication">B.Tech Electronics & Communication</option>
+            <option value="B.Tech Electrical & Electronics">B.Tech Electrical & Electronics</option>
+            <option value="B.Tech Mechanical">B.Tech Mechanical</option>
+            <option value="B.Tech Civil">B.Tech Civil</option>
+            <option value="B.Tech Biotechnology">B.Tech Biotechnology</option>
+            <option value="B.Tech Artificial Intelligence">B.Tech Artificial Intelligence</option>
+            <option value="B.Tech Data Science">B.Tech Data Science</option>
+          </optgroup>
+          <optgroup label="Under Graduation">
+            <option value="B.Sc Physics">B.Sc Physics</option>
+            <option value="B.Sc Chemistry">B.Sc Chemistry</option>
+            <option value="B.Sc Mathematics">B.Sc Mathematics</option>
+            <option value="B.Sc Computer Science">B.Sc Computer Science</option>
+            <option value="B.Com">B.Com</option>
+            <option value="BBA">BBA</option>
+            <option value="BCA">BCA</option>
+          </optgroup>
+          <optgroup label="Post Graduation">
+            <option value="M.Tech Computer Science">M.Tech Computer Science</option>
+            <option value="M.Tech Electronics & Communication">M.Tech Electronics & Communication</option>
+            <option value="M.Tech Mechanical">M.Tech Mechanical</option>
+            <option value="M.Sc Physics">M.Sc Physics</option>
+            <option value="M.Sc Chemistry">M.Sc Chemistry</option>
+            <option value="M.Sc Mathematics">M.Sc Mathematics</option>
+            <option value="MBA">MBA</option>
+            <option value="MCA">MCA</option>
+          </optgroup>
+        </select>
+        <div class="invalid-feedback">Please select a course.</div>
+      </div>
+      <!-- Additional fields -->
+      <div class="mb-3">
+        <label for="admitParentName" class="form-label">Parent/Guardian Name</label>
+        <input type="text" class="form-control" id="admitParentName" required placeholder="Enter parent or guardian's name">
+        <div class="invalid-feedback">Please enter parent/guardian name.</div>
+      </div>
+      <div class="mb-3">
+        <label for="admitParentPhone" class="form-label">Parent/Guardian Phone</label>
+        <input type="tel" class="form-control" id="admitParentPhone" required pattern="[0-9]{10}" placeholder="10-digit phone number">
+        <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+      </div>
+      <div class="mb-3">
+        <label for="admitPrevSchool" class="form-label">Previous School/College</label>
+        <input type="text" class="form-control" id="admitPrevSchool" required placeholder="Enter previous school or college name">
+        <div class="invalid-feedback">Please enter previous school/college name.</div>
+      </div>
+      <div class="mb-3">
+        <label for="admitMarks" class="form-label">12th/PUC Marks (%)</label>
+        <input type="number" class="form-control" id="admitMarks" required min="0" max="100" step="0.01" placeholder="Enter percentage (e.g. 85.5)">
+        <div class="invalid-feedback">Please enter valid marks (0-100%).</div>
+      </div>
+      <div class="mb-3">
+        <label for="admitNationality" class="form-label">Nationality</label>
+        <input type="text" class="form-control" id="admitNationality" required placeholder="Enter your nationality">
+        <div class="invalid-feedback">Please enter your nationality.</div>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+    </form>
+    <div id="admissionSuccess" class="alert alert-success mt-3 d-none" role="alert">
+      Your application has been submitted successfully!
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="api.js"></script>
+  <script>
+    // Function to calculate age from date of birth
+    function calculateAge(dateOfBirth) {
+      const today = new Date();
+      const birthDate = new Date(dateOfBirth);
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const monthDiff = today.getMonth() - birthDate.getMonth();
+      
+      if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      
+      return age;
+    }
+
+    // Function to validate age (must be at least 18)
+    function validateAge(dateOfBirth) {
+      if (!dateOfBirth) return false;
+      const age = calculateAge(dateOfBirth);
+      return age >= 18;
+    }
+
+    // Enhanced validation and submission for admissions form
+    document.getElementById('admissionsForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      let valid = true;
+      const name = document.getElementById('admitName');
+      const email = document.getElementById('admitEmail');
+      const phone = document.getElementById('admitPhone');
+      const dob = document.getElementById('admitDOB');
+      const gender = document.getElementById('admitGender');
+      const address = document.getElementById('admitAddress');
+      const course = document.getElementById('admitCourse');
+      // Additional fields
+      const parentName = document.getElementById('admitParentName');
+      const parentPhone = document.getElementById('admitParentPhone');
+      const prevSchool = document.getElementById('admitPrevSchool');
+      const marks = document.getElementById('admitMarks');
+      const nationality = document.getElementById('admitNationality');
+      
+      // Validation
+      if (!name.value.trim()) { name.classList.add('is-invalid'); valid = false; } else { name.classList.remove('is-invalid'); }
+      if (!email.value.match(/^\S+@\S+\.\S+$/)) { email.classList.add('is-invalid'); valid = false; } else { email.classList.remove('is-invalid'); }
+      if (!phone.value.match(/^[0-9]{10}$/)) { phone.classList.add('is-invalid'); valid = false; } else { phone.classList.remove('is-invalid'); }
+      
+      // Date of birth validation with age check
+      if (!dob.value) { 
+        dob.classList.add('is-invalid'); 
+        document.getElementById('ageError').style.display = 'none';
+        valid = false; 
+      } else if (!validateAge(dob.value)) {
+        dob.classList.add('is-invalid');
+        document.getElementById('ageError').style.display = 'block';
+        valid = false;
+      } else {
+        dob.classList.remove('is-invalid');
+        document.getElementById('ageError').style.display = 'none';
+      }
+      if (!gender.value) { gender.classList.add('is-invalid'); valid = false; } else { gender.classList.remove('is-invalid'); }
+      if (!address.value.trim()) { address.classList.add('is-invalid'); valid = false; } else { address.classList.remove('is-invalid'); }
+      if (!course.value) { course.classList.add('is-invalid'); valid = false; } else { course.classList.remove('is-invalid'); }
+      if (!parentName.value.trim()) { parentName.classList.add('is-invalid'); valid = false; } else { parentName.classList.remove('is-invalid'); }
+      if (!parentPhone.value.match(/^[0-9]{10}$/)) { parentPhone.classList.add('is-invalid'); valid = false; } else { parentPhone.classList.remove('is-invalid'); }
+      if (!prevSchool.value.trim()) { prevSchool.classList.add('is-invalid'); valid = false; } else { prevSchool.classList.remove('is-invalid'); }
+      if (!marks.value || isNaN(marks.value) || marks.value < 0 || marks.value > 100) { marks.classList.add('is-invalid'); valid = false; } else { marks.classList.remove('is-invalid'); }
+      if (!nationality.value.trim()) { nationality.classList.add('is-invalid'); valid = false; } else { nationality.classList.remove('is-invalid'); }
+      
+      if (!valid) {
+        return false;
+      }
+
+      // Prepare form data
+      const formData = {
+        full_name: name.value.trim(),
+        email: email.value.trim(),
+        phone: phone.value.trim(),
+        date_of_birth: dob.value,
+        gender: gender.value,
+        address: address.value.trim(),
+        course_interested: course.value,
+        parent_name: parentName.value.trim(),
+        parent_phone: parentPhone.value.trim(),
+        previous_school: prevSchool.value.trim(),
+        marks_percentage: parseFloat(marks.value),
+        nationality: nationality.value.trim()
+      };
+
+      try {
+        // Submit form data to API
+        const response = await UniversityAPI.submitAdmissionForm(formData);
+        
+        if (response.success) {
+          // Show success message
+          document.getElementById('admissionsForm').classList.add('d-none');
+          document.getElementById('admissionSuccess').classList.remove('d-none');
+          document.getElementById('admissionSuccess').textContent = response.message;
+          
+          // Show notification with application number
+          const notificationMessage = `${response.message} Application Number: ${response.data.application_number}`;
+          UniversityAPI.showNotification(notificationMessage, 'success');
+          
+          // Reset form
+          document.getElementById('admissionsForm').reset();
+        }
+      } catch (error) {
+        console.error('Admission form submission error:', error);
+        
+        // Show error message
+        document.getElementById('admissionSuccess').classList.remove('d-none');
+        document.getElementById('admissionSuccess').classList.remove('alert-success');
+        document.getElementById('admissionSuccess').classList.add('alert-danger');
+        document.getElementById('admissionSuccess').textContent = error.message || 'Failed to submit application. Please try again.';
+        
+        // Show notification
+        UniversityAPI.showNotification(error.message || 'Failed to submit application', 'danger');
+      }
+    });
+  </script>
+</body>
+</html> 

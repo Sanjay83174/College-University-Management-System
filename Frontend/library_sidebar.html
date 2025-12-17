@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library - North Gate University</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .library-hero {
+      background: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 0 2px 8px #2a5298;
+      border-radius: 0 0 2rem 2rem;
+      margin-bottom: 2rem;
+    }
+    .library-hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .library-section, .library-faq-section {
+      background: #fff;
+      border-radius: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 16px rgba(42,82,152,0.06);
+      padding: 2.5rem 1.5rem;
+    }
+    .library-section h2, .library-faq-section h2 {
+      color: #2a5298;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    .library-gallery img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(42,82,152,0.08);
+      margin-bottom: 0.5rem;
+    }
+    .library-faq-section .accordion-button {
+      font-weight: 600;
+      color: #2a5298;
+    }
+    @media (max-width: 900px) {
+      .library-hero h1 { font-size: 1.5rem; }
+      .library-gallery img { height: 100px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Banner -->
+  <div class="library-hero">
+    <h1>Library</h1>
+  </div>
+
+  <!-- Library Overview -->
+  <section class="library-section container">
+    <h2>About the Library</h2>
+    <p>
+      The North Gate University Library is a hub of knowledge and learning, offering a vast collection of books, journals, e-resources, and digital content. Our library is open to all students, faculty, and staff, providing a quiet and resourceful environment for study and research.
+    </p>
+    <ul>
+      <li>Over 50,000 books and reference materials</li>
+      <li>Access to 200+ national and international journals</li>
+      <li>Digital library with e-books and e-journals</li>
+      <li>Dedicated reading rooms and group study areas</li>
+      <li>Online catalog and book reservation system</li>
+    </ul>
+  </section>
+
+  <!-- Library Services -->
+  <section class="library-section container">
+    <h2>Library Services</h2>
+    <ul>
+      <li>Book lending and return</li>
+      <li>Reference and research assistance</li>
+      <li>Inter-library loan</li>
+      <li>Photocopying and printing</li>
+      <li>Workshops and training sessions</li>
+    </ul>
+    <h2>Timings</h2>
+    <p>Monday to Saturday: 8:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 4:00 PM</p>
+    <h2>Rules</h2>
+    <ul>
+      <li>Maintain silence at all times</li>
+      <li>No food or drinks allowed</li>
+      <li>Return books on or before the due date</li>
+      <li>Handle books and resources with care</li>
+    </ul>
+  </section>
+
+  <!-- Digital Library & Gallery -->
+  <section class="library-section container">
+    <h2>Digital Library & Gallery</h2>
+    <ul>
+      <li>Access e-books and e-journals via the <a href="#">Digital Library Portal</a></li>
+      <li>Online video lectures and tutorials</li>
+      <li>Research databases and archives</li>
+    </ul>
+    <div class="row library-gallery g-3">
+      <div class="col-6 col-md-4"><img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Library 1"></div>
+      <div class="col-6 col-md-4"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Library 2"></div>
+      <div class="col-6 col-md-4"><img src="https://images.unsplash.com/photo-1517520287167-4bbf64a00d66?auto=format&fit=crop&w=600&q=80" alt="Library 3"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="library-faq-section container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion" id="libraryFAQ">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+            How do I get a library card?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#libraryFAQ">
+          <div class="accordion-body">
+            Fill out the library membership form at the circulation desk with your student/staff ID.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+            How many books can I borrow at a time?
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#libraryFAQ">
+          <div class="accordion-body">
+            Students can borrow up to 3 books, faculty up to 5 books at a time.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+            How do I access the digital library?
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#libraryFAQ">
+          <div class="accordion-body">
+            Log in to the Digital Library Portal using your university credentials.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact/Helpdesk -->
+  <section class="library-section container text-center">
+    <h2>Library Helpdesk</h2>
+    <p>For any queries or support, contact the library helpdesk:</p>
+    <p><i class="fa fa-envelope me-2"></i>library@northgateuniv.edu<br>
+    <i class="fa fa-phone me-2"></i>+91 12345 67895</p>
+    <p>Or visit the Library Reception Desk.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-primary text-white py-4">
+    <div class="container text-center">
+      &copy; 2024 North Gate University. All rights reserved.
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
