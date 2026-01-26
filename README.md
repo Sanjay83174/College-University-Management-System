@@ -124,7 +124,9 @@ Open MySQL Workbench or Command Line
 Run the following commands:
 
 sql
+
 **"In database.js file change the sql password to your password"**
+
 Copy code
 CREATE DATABASE IF NOT EXISTS north_gate_university;
 USE north_gate_university;
